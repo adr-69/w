@@ -1,0 +1,321 @@
+/* Smooth fade-in for all sections */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-family: monospace;
+  background-color: black;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.nav {
+  text-align: center;
+  background-color: black;
+  position: sticky;
+  overflow: hidden;
+  width: 260px;
+  z-index: 1000;
+  top: 0;
+  border-radius: 5px;
+  height: auto;
+  margin-left: 1cm;
+  transition: 0.2s ease-in-out;
+  animation: fadeIn 1.5s ease-in-out;
+}
+.nav:hover {
+  box-shadow: 1px 1px 30px cyan;
+  background-color: black;
+}
+
+a {
+  text-decoration: none;
+  margin: 5px;
+  color: white;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  transition: 0.2s ease-in-out;
+}
+a:hover {
+  text-shadow: 1px 1px 4px cyan;
+  margin: 6px;
+  color: white;
+  font-size: 15px;
+}
+
+.main {
+  background-image: url('pageimage/main1.jpg');
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  align-items: center;
+  animation: fadeIn 2s ease;
+}
+
+.intro {
+  text-align: center;
+  backdrop-filter: blur(5px);
+  border: 1px solid;
+  border-radius: 20px;
+  width: 400px;
+  height: auto;
+  animation: fadeIn 1.8s ease;
+}
+.q1 {
+  margin-top: 1cm;
+  font-size: 20px;
+}
+.q2 {
+  font-size: 40px;
+  margin-top: -15px;
+}
+.q3 {
+  margin-top: -30px;
+  text-shadow: 0px 0px 30px;
+  color: cyan;
+}
+
+.btn1 {
+  margin-top: 1cm;
+  margin-bottom: 1cm;
+  border: none;
+  background-color: cyan;
+  border-radius: 10px;
+  width: 150px;
+  height: 30px;
+  backdrop-filter: blur(30px);
+  box-shadow: 0px 0px 30px cyan;
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+}
+.btn1:hover {
+  width: 170px;
+  height: 50px;
+  box-shadow: 0px 0px 40px cyan;
+}
+
+.line {
+  width: auto;
+  height: 5px;
+  background-color: black;
+  box-shadow: 0px 0px 10px cyan;
+  animation: fadeIn 2s ease;
+}
+
+.main2 {
+  background-image: url('pageimage/main2.jpg');
+  color: white;
+  text-align: center;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  animation: fadeIn 2.2s ease;
+}
+.q4 {
+  font-size: 42px;
+}
+
+.intro2 {
+  text-align: center;
+  width: 650px;
+  height: auto;
+  animation: fadeIn 2.2s ease;
+}
+
+.p1 {
+  margin-bottom: 1cm;
+}
+
+.main3 {
+  background-image: url('pageimage/main3.jpg');
+  color: white;
+  text-align: center;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  animation: fadeIn 2.4s ease;
+}
+
+.box-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  animation: fadeIn 2.6s ease;
+}
+
+.loob-sa-box1, .loob-sa-box2, .loob-sa-box3, .loob-sa-box4 {
+  text-align: center;
+  backdrop-filter: blur(5px);
+  border: 1px solid;
+  border-radius: 20px;
+  width: 180px;
+  height: 280px;
+  box-shadow: 0px 0px 20px cyan;
+  transition: 0.4s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.loob-sa-box1:hover, .loob-sa-box2:hover, .loob-sa-box3:hover, .loob-sa-box4:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 40px cyan;
+}
+
+.box-title {
+  font-size: 20px;
+  color: cyan;
+  margin-bottom: 10px;
+  text-shadow: 0px 0px 10px cyan;
+}
+
+.box-description {
+  font-size: 14px;
+  color: white;
+  line-height: 1.5;
+}
+
+.main4 {
+  background-image: url('pageimage/main4.jpg');
+  color: white;
+  text-align: center;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  animation: fadeIn 3s ease;
+}
+
+.q5 {
+  font-size: 42px;
+}
+.main5 {
+  background-image: url('pageimage/main5.jpg');
+  color: white;
+  text-align: center;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  animation: fadeIn 3s ease;
+}
+.q6 {
+  font-size: 42px;
+}
+.img-container {
+  display: flex;
+  gap: 20px;
+  
+  justify-content: center;
+  animation: fadeIn 2.6s ease;
+}
+.logo {
+  width: 60px;
+  height: 60px;
+  filter: drop-shadow(1px 1px 20px cyan);
+}
+.icon-box {
+  text-align: center;
+  backdrop-filter: blur(5px);
+  border: 1px solid;
+  border-radius: 20px;
+  width: 90px;
+  height: 120px;
+  box-shadow: 0px 0px 20px cyan;
+  transition: 0.4s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.icon-box:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 40px cyan;
+}
+.main6 {
+  background-image: url('pageimage/main6.jpg');
+  color: white;
+  text-align: center;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  animation: fadeIn 3s ease;
+}
+.q7 {
+  font-size: 42px;
+}
+.facebook-box {
+  text-align: center;
+  backdrop-filter: blur(5px);
+  border: 1px solid;
+  border-radius: 20px;
+  width: 300px;
+  height: 120px;
+  box-shadow: 0px 0px 20px cyan;
+  transition: 0.4s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.facebook-box:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 40px cyan;
+}
+.facebook {
+  margin-top: 1cm;
+  width: 60px;
+  height: 60px;
+  filter: drop-shadow(1px 1px 20px cyan);
+}
+/* OTHER */
+.copyright {
+  text-align: center;
+  font-size: 14px;
+  color: black;
+  background-color: gray;
+  padding: 10px 0;
+  border-top: 1px solid black;
+}
